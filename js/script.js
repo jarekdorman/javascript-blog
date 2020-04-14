@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const titleClickHandler = function (event) {
   event.preventDefault();
@@ -7,10 +7,10 @@ const titleClickHandler = function (event) {
   console.log(event);
 
   /* remove class 'active' from all article links  */
-  const activeLinks = document.querySelectorAll(".titles a.active");
+  const activeLinks = document.querySelectorAll(''.titles a.active');
 
   for (let activeLink of activeLinks) {
-    activeLink.classList.remove("active");
+    activeLink.classList.remove("active");npm 
   }
 
   /* add class 'active' to the clicked link */

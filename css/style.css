@@ -97,6 +97,7 @@ ul li a {
   opacity: 0;
   position: absolute;
   transition: opacity 0.5s;
+  width: 400px;
 }
 
 .post.active {
