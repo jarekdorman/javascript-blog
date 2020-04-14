@@ -10,7 +10,7 @@ const titleClickHandler = function (event) {
   const activeLinks = document.querySelectorAll(''.titles a.active');
 
   for (let activeLink of activeLinks) {
-    activeLink.classList.remove("active");npm 
+    activeLink.classList.remove("active"); npm
   }
 
   /* add class 'active' to the clicked link */
@@ -77,7 +77,7 @@ console.log(links);
 for (let link of links) {
   link.addEventListener("click", titleClickHandler);
 }
-               
+
 
 
 
