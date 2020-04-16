@@ -4,7 +4,8 @@ const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
   optArticleTagsSelector = '.post-tags .list',
-  optArticleAuthorSelector = '.post .post-author';
+  optArticleAuthorSelector = '.post .post-author',
+  optTagsListSelector = '.tags.list';
 
 const titleClickHandler = function (event) {
   event.preventDefault();
@@ -77,6 +78,7 @@ function generateTitleLinks(customSelector = '') {
 generateTitleLinks();
 
 function generateTags() {
+  let allTags = [];
   /* find all articles */
   const articles = document.querySelectorAll(optArticleSelector);
   /* START LOOP: for every article: */
@@ -102,6 +104,9 @@ function generateTags() {
         '<li><a href="#tag-' + tag + '">' + tag + '</a></li> ';
       // console.log(tagLinkHTML);
       /* add generated code to html variable */
+      if (allTags.indexOf(tagLinkHTML) == -1) {
+        allTags.push(tagLinkHTML);
+      }
       html = html + tagLinkHTML;
       console.log(html);
       /* END LOOP: for each tag */
@@ -110,6 +115,8 @@ function generateTags() {
     tagsWrapper.innerHTML = html;
     /* END LOOP: for every article: */
   }
+  const tagList = document.querySelector('.tags');
+  tagList.innerHTML = allTags.join('');
 }
 
 generateTags();
