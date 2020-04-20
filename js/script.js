@@ -157,7 +157,6 @@ function generateTags() {
   /* [NEW] add html from allTags to tagList */
   // tagList.innerHTML = allTags.join('');
 
-
   const tagsParams = calculateTagsParams(allTags);
   console.log('tagsParams:', tagsParams);
 
