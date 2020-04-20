@@ -87,6 +87,35 @@ ul li a {
   color: #444;
 }
 
+.tag-size-1 {
+  font-size: 120%;
+}
+
+.tag-size-2 {
+  font-size: 140%;
+}
+
+.tag-size-3 {
+  font-size: 160%;
+}
+
+.tag-size-4 {
+  font-size: 180%;
+}
+
+.tag-size-5 {
+  font-size: 200%;
+}
+
+.sidebar .tags li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.list, .tags {
+  display: inline;
+}
+
 /* Authors */
 .authors li {
   margin-bottom: 12px;
