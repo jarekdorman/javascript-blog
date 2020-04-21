@@ -75,7 +75,7 @@ body {
 
 .list .active {
   font-weight: bold;
-  color: red;
+  color: #ff9966;
 }
 
 .list-horizontal li {
@@ -137,6 +137,12 @@ ul li a {
 
 .post-author {
   font-style: italic;
+  list-style: none;
+}
+
+.post-author a {
+  color: #ff5e62;
+  text-decoration: none;
 }
 
 .post-tags {
