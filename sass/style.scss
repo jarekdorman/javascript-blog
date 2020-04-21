@@ -11,12 +11,14 @@ $font-text: 'Source Sans Pro', sans-serif;
 
 /* Global */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(90deg, #ff9966 0%,#ff5e62 100% );
+  background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
@@ -57,7 +59,8 @@ body {
   flex: 2 0 0;
 }
 
-.sidebar, .posts {
+.sidebar,
+.posts {
   background: $color-light;
   margin-right: 10px;
   padding: 40px;
@@ -84,7 +87,7 @@ body {
 
   .active {
     font-weight: bold;
-    color: #ff9966 ;
+    color: #ff9966;
   }
 }
 
@@ -124,7 +127,8 @@ ul li a {
   margin-left: 5px;
 }
 
-.list, .tags {
+.list,
+.tags {
   display: inline;
 }
 /* Authors */
